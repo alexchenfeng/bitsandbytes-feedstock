@@ -33,6 +33,11 @@ requirements:
   host:
     - python
     - pip
+    - if: (cuda_compiler_version or "") is startingwith("13")
+      then:
+        - cuda-cudart-dev
+        - libcublas-dev
+        - libcusparse-dev
     - if: (cuda_compiler_version or "") is startingwith("12")
       then:
         - cuda-cudart-dev

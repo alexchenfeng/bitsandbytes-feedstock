@@ -38,6 +38,11 @@ description = "List contents of bitsandbytes-feedstock packages built for varian
 [tasks."build-linux_64_cuda_compiler_version12.9python3.12.____cpython"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_cuda_compiler_version12.9python3.12.____cpython.yaml"
 description = "Build bitsandbytes-feedstock with variant linux_64_cuda_compiler_version12.9python3.12.____cpython directly (without setup scripts)"
+
+[tasks."build-linux_64_cuda_compiler_version13.0python3.12.____cpython"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_cuda_compiler_version13.0python3.12.____cpython.yaml"
+description = ""
+
 [tasks."inspect-linux_64_cuda_compiler_version12.9python3.12.____cpython"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_cuda_compiler_version12.9python3.12.____cpython.yaml"
 description = "List contents of bitsandbytes-feedstock packages built for variant linux_64_cuda_compiler_version12.9python3.12.____cpython"
